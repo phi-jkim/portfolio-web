@@ -1,0 +1,36 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Jinha Kim" 
+
+theme = "hugo-theme-jinhakim" 
+
+[params] 
+    description = "Learn more about who I am!"
+    dateFormat = "Jan 2, 2006"
+    authorName = "Jinha Kim"
+
+[permalinks]
+  posts = "/projects/:title/" 
+  resume = "/resume/:title/"
+  blogs = "/blogs/:title/" 
+[menu] 
+  [[menu.main]]
+    name = "Personal"
+    pre = "home"
+    url = "/"
+    weight = 1 
+  [[menu.main]]
+    name = "Projects"
+    pre = "edit"
+    url = "/projects/" 
+    weight = 2
+  [[menu.main]]
+    name = "Blogs"
+    pre = "blog"
+    url = "/blogs/"
+    weight = 3
+  [[menu.main]]
+    name = "Resume"
+    pre = "resume"
+    url = "/resume/"
+    weight = 4
